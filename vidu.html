@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>New Course Registration</title>
+</head>
+<body>
+
+    <form>
+
+        <header>
+            <h2>New Course Registration</h2>
+        </header>
+
+        <section>
+            <label for="fullname">Full Name</label>
+            <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Enter full name"
+                required
+            >
+        </section>
+
+        <section>
+            <label for="phone">Phone</label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter phone number"
+                required
+            >
+        </section>
+
+        <section>
+            <label for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter email"
+                required
+            >
+        </section>
+
+        <section>
+            <span>Payment Method</span>
+
+            <label>
+                <input type="radio" name="payment" value="cash" required>
+                Cash
+            </label>
+
+            <label>
+                <input type="radio" name="payment" value="bank">
+                Bank Transfer
+            </label>
+        </section>
+
+        <section>
+            <label for="course">Course</label>
+            <select id="course" name="course" required>
+                <option value="">-- Select a course --</option>
+                <option value="web">Web Development</option>
+                <option value="mobile">Mobile App</option>
+                <option value="data">Data Science</option>
+            </select>
+        </section>
+
+        <section>
+            <button type="submit">Save Registration</button>
+            <button type="reset">Cancel</button>
+        </section>
+
+    </form>
+
+</body>
+</html>
